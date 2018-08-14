@@ -11,10 +11,15 @@ colorscheme PaperColor
 let mapleader=" "
 " copy to clipboard
 set clipboard=unnamedplus
-" MAP
+
+" map
 inoremap <C-g><C-g> <C-x><C-o>
 inoremap <Leader>y "+y
 inoremap <Leader>p "+p
+"inoremap <Leader>d :NERDTree<CR>
+nmap <silent> <C-d> :NERDTree<CR>
+"imap <silent> <C-q> :q!<CR>
+nmap <silent> <C-q> :q!<CR>
 filetype plugin on  
 let g:go_disable_autoinstall = 0
 
