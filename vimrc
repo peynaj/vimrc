@@ -22,6 +22,7 @@ nmap <silent> <C-d> :NERDTree<CR>
 nmap <silent> <C-q> :q!<CR>
 filetype plugin on  
 let g:go_disable_autoinstall = 0
+let g:ctrlp_map = '<c-p>'
 
 " Highlight
 " let g:go_highlight_functions = 1  
@@ -78,6 +79,8 @@ Plug 'https://github.com/fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'https://github.com/NLKNguyen/papercolor-theme' 
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
+Plug 'https://github.com/kien/ctrlp.vim.git'
+
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
